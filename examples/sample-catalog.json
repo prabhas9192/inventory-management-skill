@@ -1,0 +1,63 @@
+{
+  "reference_date": "2026-11-03",
+  "items": [
+    {
+      "sku": "DAIRY-MILK-1L",
+      "name": "Organic Whole Milk 1L",
+      "archetype": "RAPID_SPOIL",
+      "base_cost": 1.50,
+      "base_selling_price": 3.00,
+      "shelf_life_days": 7,
+      "warning_threshold_days": 2
+    },
+    {
+      "sku": "CEMT-OPC-53",
+      "name": "Portland Cement Grade 53 (50kg)",
+      "archetype": "SHELF_DECAY",
+      "decay_model": "MOISTURE_STRENGTH",
+      "base_cost": 4.20,
+      "base_selling_price": 7.50,
+      "shelf_life_days": 90,
+      "warning_threshold_days": 20
+    },
+    {
+      "sku": "GRAIN-RICE-BASMATI",
+      "name": "Royal Himalayan Basmati Rice (1kg)",
+      "archetype": "MATURING",
+      "maturation_curve": "SATURATING",
+      "base_cost": 1.80,
+      "base_selling_price": 3.50,
+      "maturation_days": 365,
+      "appreciation_multiplier": 1.75
+    },
+    {
+      "sku": "WINE-CABERNET-RES",
+      "name": "Estate Cabernet Sauvignon Reserve 750ml",
+      "archetype": "BELL_CURVE",
+      "base_cost": 15.00,
+      "base_selling_price": 35.00,
+      "maturation_days": 730,
+      "peak_quality_days": 1825,
+      "appreciation_multiplier": 2.50
+    },
+    {
+      "sku": "AGGR-SAND-RIVER",
+      "name": "Washed Concrete River Sand (1 MT)",
+      "archetype": "INERT",
+      "base_cost": 18.00,
+      "base_selling_price": 32.00
+    }
+  ],
+  "lots": [
+    { "lot_id": "M-01", "sku": "DAIRY-MILK-1L", "batch_number": "BATCH-M-NEAR", "quantity": 20, "mfg_date": "2026-10-28", "storage_location": "Dairy Cooler A" },
+    { "lot_id": "M-02", "sku": "DAIRY-MILK-1L", "batch_number": "BATCH-M-FRESH", "quantity": 50, "mfg_date": "2026-11-01", "storage_location": "Dairy Cooler B" },
+    { "lot_id": "C-01", "sku": "CEMT-OPC-53", "batch_number": "HEAT-C-OLD", "quantity": 100, "mfg_date": "2026-08-20", "storage_location": "Shed 1 Bay 4" },
+    { "lot_id": "C-02", "sku": "CEMT-OPC-53", "batch_number": "HEAT-C-FRESH", "quantity": 200, "mfg_date": "2026-10-19", "storage_location": "Shed 2 Bay 1" },
+    { "lot_id": "R-01", "sku": "GRAIN-RICE-BASMATI", "batch_number": "HARVEST-2026-AUG", "quantity": 500, "mfg_date": "2026-08-05", "storage_location": "Silo Grain A" },
+    { "lot_id": "R-02", "sku": "GRAIN-RICE-BASMATI", "batch_number": "HARVEST-2025-AUG", "quantity": 500, "mfg_date": "2025-08-10", "storage_location": "Silo Aged B" },
+    { "lot_id": "W-01", "sku": "WINE-CABERNET-RES", "batch_number": "VINTAGE-2025", "quantity": 60, "mfg_date": "2025-11-03", "storage_location": "Cellar Rack 1" },
+    { "lot_id": "W-02", "sku": "WINE-CABERNET-RES", "batch_number": "VINTAGE-2021", "quantity": 40, "mfg_date": "2021-11-04", "storage_location": "Cellar Rack 5" },
+    { "lot_id": "S-01", "sku": "AGGR-SAND-RIVER", "batch_number": "PILE-SEP", "quantity": 40, "mfg_date": "2026-09-04", "storage_location": "Yard Pit 1" },
+    { "lot_id": "S-02", "sku": "AGGR-SAND-RIVER", "batch_number": "PILE-NOV", "quantity": 30, "mfg_date": "2026-11-02", "storage_location": "Yard Pit 1" }
+  ]
+}
